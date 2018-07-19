@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>新建文档--记事本</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/new/prefix1/icon/icon.png</normaloff>:/new/prefix1/icon/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>881</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="newAct"/>
+    <addaction name="openAct"/>
+    <addaction name="saveAct"/>
+    <addaction name="saveasAct"/>
+    <addaction name="quitAct"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="undoAct"/>
+    <addaction name="redoAct"/>
+    <addaction name="cutAct"/>
+    <addaction name="copyAct"/>
+    <addaction name="pasteAct"/>
+    <addaction name="selectAllAct"/>
+   </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <addaction name="fontAct"/>
+    <addaction name="colorAct"/>
+   </widget>
+   <widget class="QMenu" name="menuTool">
+    <property name="title">
+     <string>Tool</string>
+    </property>
+    <addaction name="findAct"/>
+    <addaction name="replaceAct"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFormat"/>
+   <addaction name="menuTool"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/new.png</normaloff>:/new/prefix1/icon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="openAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/open.png</normaloff>:/new/prefix1/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="saveAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/save.png</normaloff>:/new/prefix1/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="saveasAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/saveas.png</normaloff>:/new/prefix1/icon/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save As</string>
+   </property>
+  </action>
+  <action name="quitAct">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="undoAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/undo.png</normaloff>:/new/prefix1/icon/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="redoAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/redo.png</normaloff>:/new/prefix1/icon/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+  </action>
+  <action name="cutAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/cut.png</normaloff>:/new/prefix1/icon/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cut</string>
+   </property>
+  </action>
+  <action name="copyAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/copy.png</normaloff>:/new/prefix1/icon/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+  </action>
+  <action name="pasteAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/paste.png</normaloff>:/new/prefix1/icon/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+  </action>
+  <action name="selectAllAct">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/icon/selectall.png</normaloff>:/new/prefix1/icon/selectall.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;SelectAll</string>
+   </property>
+  </action>
+  <action name="fontAct">
+   <property name="text">
+    <string>&amp;Font</string>
+   </property>
+  </action>
+  <action name="colorAct">
+   <property name="text">
+    <string>&amp;Color</string>
+   </property>
+  </action>
+  <action name="findAct">
+   <property name="text">
+    <string>&amp;Find</string>
+   </property>
+  </action>
+  <action name="replaceAct">
+   <property name="text">
+    <string>&amp;Replace</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
